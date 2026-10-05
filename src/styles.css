@@ -1829,3 +1829,200 @@ html[data-theme="dark"] .quote-actions {
     width: 100%;
   }
 }
+/* =========================================================
+   MK VISION - CATERING VIDEO STYLES
+   ========================================================= */
+
+/* Service detail video */
+.detail-hero-media {
+  width: 100%;
+  overflow: hidden;
+}
+
+.detail-hero-media img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.catering-service-video-section {
+  padding: 100px 0;
+  background: var(--surface);
+}
+
+.catering-service-video-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.catering-service-video-heading h2 {
+  margin-top: 15px;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.catering-service-video-heading p {
+  max-width: 600px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.catering-service-video {
+  width: min(1050px, 100%);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #000;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+}
+
+.catering-service-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  background: #000;
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CATERING VIDEO GALLERY
+   ========================================================= */
+
+.catering-video-section {
+  padding: 100px 0;
+  background: #eeece5;
+}
+
+.catering-video-heading {
+  max-width: 760px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.catering-video-heading h2 {
+  margin-top: 15px;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+}
+
+.catering-video-heading p {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.catering-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.catering-video-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  background: #000;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.catering-video-card video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: contain;
+}
+
+.catering-video-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 30px;
+
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.72);
+
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.catering-video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html[data-theme="dark"] .catering-video-section {
+  background: #191919;
+}
+
+html[data-theme="dark"] .catering-service-video-section {
+  background: #111;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .detail-hero-media img {
+    height: 420px;
+  }
+
+  .catering-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+  .detail-hero-media img {
+    height: 340px;
+  }
+
+  .catering-service-video-section,
+  .catering-video-section {
+    padding: 70px 0;
+  }
+
+  .catering-video-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .catering-video-card {
+    aspect-ratio: 16 / 10;
+  }
+}

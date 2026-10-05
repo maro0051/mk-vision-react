@@ -237,7 +237,6 @@ export const cleaningServices = [
   },
 ];
 
-
 export const cateringServices = [
   {
     slug: "weddings",
@@ -263,6 +262,8 @@ export const cateringServices = [
     },
 
     image: "/images/catering/catering-1.jpg",
+
+    video: "/video/video1.mp4",
 
     features: {
       en: [
@@ -303,6 +304,8 @@ export const cateringServices = [
 
     image: "/images/catering/catering-2.jpg",
 
+    video: "/video/video2.mp4",
+
     features: {
       en: [
         "Flexible menus",
@@ -341,6 +344,8 @@ export const cateringServices = [
     },
 
     image: "/images/catering/catering-3.jpg",
+
+    video: "/video/video3.mp4",
 
     features: {
       en: [
@@ -381,6 +386,8 @@ export const cateringServices = [
 
     image: "/images/catering/catering-1.jpg",
 
+    video: "/video/video4.mp4",
+
     features: {
       en: [
         "Buffet options",
@@ -419,6 +426,8 @@ export const cateringServices = [
     },
 
     image: "/images/catering/catering-2.jpg",
+
+    video: "/video/video5.mp4",
 
     features: {
       en: [
@@ -459,6 +468,8 @@ export const cateringServices = [
 
     image: "/images/catering/catering-3.jpg",
 
+    video: "/video/video6.mp4",
+
     features: {
       en: [
         "Service staff",
@@ -473,7 +484,6 @@ export const cateringServices = [
     },
   },
 ];
-
 
 export const galleryItems = [
   ...cleaningServices.map((service) => ({
