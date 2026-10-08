@@ -7,11 +7,17 @@ export default function ServiceAreas() {
 
   const areas = fr
     ? [
+        ["Halifax Nova Scotia", "Halifax et environs"],
+        ["Dartmouth", "Dartmouth et environs"],
+        ["Montréal", "Montréal et environs"],
         ["Ottawa", "Ottawa et environs"],
         ["Gatineau", "Gatineau et environs"],
         ["Ontario", "Selon le projet"],
       ]
     : [
+        ["Halifax Nova Scotia", "Halifax and surrounding areas"],
+        ["Dartmouth", "Dartmouth and surrounding areas"],
+        ["Montréal", "Montreal and surrounding areas"],
         ["Ottawa", "Ottawa and surrounding areas"],
         ["Gatineau", "Gatineau and surrounding areas"],
         ["Ontario", "Depending on the project"],
